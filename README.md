@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://github.com/thehen/decentraland-unlock-integration/blob/readme/docs/img/logo.png?raw=true"><br><br>
+  <img src="https://user-images.githubusercontent.com/1434865/141594907-4536905a-1302-4bf6-ad1f-b06af36edcc3.png"><br><br>
   <h1>
     Unlock Protocol / Unity Game Engine Integration
   </h1>
@@ -11,7 +11,6 @@
 
   <p>Add paid memberships and content access to your Unity WebGL projects.</p>
 </div>
-
 
 
 ![Unity Package Manager](https://omiyagames.github.io/template-unity-package/resources/preview.png)

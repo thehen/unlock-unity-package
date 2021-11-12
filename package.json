@@ -1,6 +1,6 @@
 {
-  "name": "com.omiyagames.template",
-  "displayName": "Omiya Games - Template Unity Package",
+  "name": "com.henryhoffman.unlockprotocol",
+  "displayName": "Henry Hoffman - Unlock Protocol",
   "version": "0.1.0-preview.1",
   "unity": "2019.3",
   "unityRelease": "7f1",
@@ -9,18 +9,23 @@
   "type": "tool",
   "license": "MIT",
   "author": {
-    "name": "Taro Omiya",
-    "email": "support@omiyagames.com",
-    "url": "https://www.omiyagames.com"
+    "name": "Henry Hoffman",
+    "email": "henry.hoffman@newfangled.games",
+    "url": "https://www.henryhoffman.com"
   },
   "dependencies": {
     "com.unity.ext.nunit": "1.0.0"
   },
   "keywords": [
-    "Omiya Games",
+    "Henry Hoffman",
     "Scripts",
-    "Template",
-    "Tool"
+    "Unlock Protocol",
+    "Membership",
+    "IAP",
+    "Payments",
+    "NFT",
+    "Etherium",
+    "Blockchain"
   ],
   "samples": [
     {

@@ -1,8 +1,42 @@
-# [Omiya Games](https://www.omiyagames.com/) - Template Unity Package
 
-[![Template Unity Package documentation](https://github.com/OmiyaGames/template-unity-package/workflows/Host%20DocFX%20Documentation/badge.svg)](https://omiyagames.github.io/template-unity-package/) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I51KS8F)
+<div align="center">
+  <img src="https://github.com/thehen/decentraland-unlock-integration/blob/readme/docs/img/logo.png?raw=true"><br><br>
+  <h1>
+    Unlock Protocol / Unity Game Engine Integration
+  </h1>
+
+<p align="center">
+    <img alt="GitHub" src="https://img.shields.io/github/license/thehen/unlock-unity-package">
+</p>
+
+  <p>Add paid memberships and content access to your Unity WebGL projects.</p>
+</div>
+
+
 
 ![Unity Package Manager](https://omiyagames.github.io/template-unity-package/resources/preview.png)
+
+## Overview
+
+Easily add payments and NFTs to your Unity WebGL project - no coding  necessary. Users can purchase NFTs to grant access to content, purchase in-game items, provide ad-free experiences, buy tickets to in-game events, and lots more!
+
+## Features 
+
+- Accept payment in ETH or any other ERC20 token
+- Credit card payments supported
+- Ethereum Mainnet, xDAI, Polygon, Binance Smart Chain network support
+- Set a limited or unlimited number of keys 
+- Set duration for how long the keys last for (useful for recurring subscriptions!)
+
+## Create Locks
+
+You can easily create and manage locks through the Unlock Dashboard. For more information, refer to the [official Unlock Protocol documentation](https://docs.unlock-protocol.com/creators/deploying-lock).
+
+## Adding the Unlock Protocol Package to your Unity Project
+
+## Import the Examples
+
+---
 
 **Template Unity Package** is a Github template [Omiya Games](https://www.omiyagames.com/) uses to start a new [Unity](https://unity.com/) package.  To use this template for your own purposes, we recommend:
 
@@ -18,7 +52,7 @@ This package uses [DocFX](https://dotnet.github.io/docfx/) and Github Actions to
 
 ## Install
 
-There are two common methods for installing this package.
+
 
 ### Through [Unity Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
 
@@ -26,29 +60,3 @@ Unity's own Package Manager supports [importing packages through a URL to a Git 
 
 1. First, on this repository page, click the "Clone or download" button, and copy over this repository's HTTPS URL.  
 2. Then click on the + button on the upper-left-hand corner of the Package Manager, select "Add package from git URL..." on the context menu, then paste this repo's URL!
-
-While easy and straightforward, this method has a few major downside: it does not support dependency resolution and package upgrading when a new version is released.  To add support for that, the following method is recommended:
-
-### Through [OpenUPM](https://openupm.com/)
-
-Installing via [OpenUPM's command line tool](https://openupm.com/) is recommended because it supports dependency resolution, upgrading, and downgrading this package.  Given this package is just an example, thought, it hadn't been added into OpenUPM yet.  So the rest of these instructions are hypothetical...for now...
-
-If you haven't already [installed OpenUPM](https://openupm.com/docs/getting-started.html#installing-openupm-cli), you can do so through Node.js's `npm` (obviously have Node.js installed in your system first):
-```
-npm install -g openupm-cli
-```
-Then, to install this package, just run the following command at the root of your Unity project:
-```
-openupm add com.omiyagames.template
-```
-
-## Resources
-
-- [Documentation](https://omiyagames.github.io/template-unity-package/)
-- [Change Log](/CHANGELOG.md)
-
-## LICENSE
-
-Overall package is licensed under [MIT](/LICENSE.md), unless otherwise noted in the [3rd party licenses](/THIRD%20PARTY%20NOTICES.md) file and/or source code.
-
-Copyright (c) 2019-2020 Omiya Games

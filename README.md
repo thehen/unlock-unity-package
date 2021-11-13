@@ -31,7 +31,7 @@ You can easily create and manage locks through the Unlock Dashboard. For more in
 ## Install
 
 1. In Unity, open the Package Manager by opening `Window/Package Manager`
-2. Then click on the + button on the upper-left-hand corner of the Package Manager, select "Add package from git URL..." on the context menu, then paste the following: ```https://github.com/thehen/unlock-unity-package/```
+2. Then click on the + button on the upper-left-hand corner of the Package Manager, select "Add package from git URL..." on the context menu, then paste the following: ```https://github.com/thehen/unlock-unity-package.git```
 
 ![packagefromurl](https://user-images.githubusercontent.com/1434865/141595366-fcc29d10-ee13-4436-a5aa-308c2981125a.png)
 

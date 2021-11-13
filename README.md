@@ -12,8 +12,6 @@
   <p>Add paid memberships and content access to your Unity WebGL projects.</p>
 </div>
 
-![Unity Package Manager](https://omiyagames.github.io/template-unity-package/resources/preview.png)
-
 ## Overview
 
 Easily add payments and NFTs to your Unity WebGL project - no coding  necessary. Users can purchase NFTs to grant access to content, purchase in-game items, provide ad-free experiences, buy tickets to in-game events, and lots more!
@@ -81,9 +79,10 @@ You can easily create and manage locks through the Unlock Dashboard. For more in
 
 ![paywlass](https://user-images.githubusercontent.com/1434865/141599374-20022432-749b-486e-bc25-66408b7a734e.png)
 
-8.) Select `File/Build Settings`, ensure your build target is WebGL, and press `Build and Run` to test the scene.
+8.) Select the button you added before, and set the OnClick event to the following:
+
+![btnclick](https://user-images.githubusercontent.com/1434865/141600053-b08ec0a5-44d2-4fce-bd1b-c3ae395c1ecf.png)
+
+9.) Select `File/Build Settings`, ensure your build target is WebGL, and press `Build and Run` to test the scene.
 
 You should be presented with an empty scene and a button. Upon pressing the button, the payment flow will begin. After succesful payment, the button should then disappear.
-
-
----

@@ -20,11 +20,11 @@ namespace HenryHoffman.UnlockProtocol
 
             source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplates/Unlock-custom";
             target = webglDir + "/Unlock-custom";
-            FileUtil.CopyFileOrDirectory(source, target);
+            AssetDatabase.CopyAsset(source, target);
 
             source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplates/Unlock-paywall";
             target = webglDir + "/Unlock-paywall";
-            FileUtil.CopyFileOrDirectory(source, target);
+            AssetDatabase.CopyAsset(source, target);
 
             AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
         }

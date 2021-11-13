@@ -18,11 +18,11 @@ namespace HenryHoffman.UnlockProtocol
                 Directory.CreateDirectory(webglDir);
             }
 
-            source = "Packages/Unlock Protocol/WebGLTemplates~/Unlock-custom";
+            source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplates/Unlock-custom";
             target = webglDir + "/Unlock-custom";
             FileUtil.CopyFileOrDirectory(source, target);
 
-            source = "Packages/Unlock Protocol/WebGLTemplates~/Unlock-paywall";
+            source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplates/Unlock-paywall";
             target = webglDir + "/Unlock-paywall";
             FileUtil.CopyFileOrDirectory(source, target);
 

@@ -9,9 +9,6 @@ namespace HenryHoffman.UnlockProtocol
         public PaywallConfig paywallConfig;
         public UnityEvent stateUnlocked;
         public UnityEvent stateLocked;
-        
-        [DllImport("__Internal")]
-        private static extern void unlockContent();
 
         [DllImport("__Internal")]
         private static extern void initializePaywall(string str);

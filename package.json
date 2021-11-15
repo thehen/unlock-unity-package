@@ -31,7 +31,7 @@
         {
             "displayName": "Paywall Example",
             "description": "Unlock Protocol Paywall Example",
-            "path": "Samples/Paywall"
+            "path": "Samples~/Paywall"
         }
     ]
 }

@@ -1,0 +1,52 @@
+{
+  "name": "unlock-unity",
+  "version": "1.0.0",
+  "description": "An Unlock Protocol integration for Unity Game Engine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "Henry Hoffman",
+  "license": "MIT",
+  "dependencies": {
+    "@unlock-protocol/unlock-js": "^0.21.1",
+    "@walletconnect/web3-provider": "^1.7.1",
+    "assert": "^2.0.0",
+    "cipher-base": "^1.0.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "crypto-browserify": "^3.12.0",
+    "ethers": "^5.3.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "safe-event-emitter": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
+    "util": "^0.12.4",
+    "web3-provider-engine": "^16.0.3",
+    "web3modal": "^1.9.4",
+    "xhr2-cookies": "^1.1.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "browser": {
+    "os": false,
+    "https": false,
+    "http": false,
+    "stream": false,
+    "util": "./node_modules/util",
+    "url": "./node_modules/url",
+    "assert": false,
+    "crypto": false
+  }
+}

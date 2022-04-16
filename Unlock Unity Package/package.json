@@ -1,0 +1,34 @@
+{
+    "name": "com.henryhoffman.unlockprotocol",
+    "displayName": "Unlock Protocol",
+    "version": "1.0.0",
+    "unity": "2020.2",
+    "unityRelease": "0f1",
+    "description": "The Unlock Protocol package provides an integration for using the Unlock Protocol Paywall or Unlock-js with Unity.",
+    "category": "Tool",
+    "type": "tool",
+    "license": "MIT",
+    "author": {
+        "name": "Henry Hoffman",
+        "email": "henry.hoffman@newfangled.games",
+        "url": "https://www.henryhoffman.com"
+    },
+    "keywords": [
+        "Henry Hoffman",
+        "Scripts",
+        "Unlock Protocol",
+        "Membership",
+        "IAP",
+        "Payments",
+        "NFT",
+        "Etherium",
+        "Blockchain"
+    ],
+    "samples": [
+        {
+            "displayName": "Paywall Example",
+            "description": "Unlock Protocol Paywall Example",
+            "path": "Samples~/Paywall"
+        }
+    ]
+}

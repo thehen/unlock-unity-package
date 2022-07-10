@@ -30,5 +30,8 @@
             "description": "Unlock Protocol Paywall Example",
             "path": "Samples~/Paywall"
         }
-    ]
+    ],
+    "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
+    }
 }

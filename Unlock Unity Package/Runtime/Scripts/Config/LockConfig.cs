@@ -9,28 +9,32 @@ namespace HenryHoffman.UnlockProtocol
 
     public class LockConfig : ScriptableObject
     {
-        public StringLockDictionary locks;
+        public Lock theLock;
 
         [Serializable]
         public class Lock
         {
             public string name;
             public int network;
+
+            [JsonIgnore]
+            public string address;
         }
 
-        [Serializable]
-        public class Locks
+        public Dictionary<string, Lock> GetDictionary()
         {
-            public StringLockDictionary locks;
+            var dict = new Dictionary<string, Lock>();
+            dict.Add(theLock.address, theLock);
+            return dict;
         }
 
         public string GetSerialized()
         {
-            Locks thisLocks = new Locks();
-            thisLocks.locks = locks;
-            return JsonConvert.SerializeObject(thisLocks);
+            var dict = GetDictionary();
+            return JsonConvert.SerializeObject(dict);
         }
 
+        /*
         public string GetFirstAddress()
         {
             string address = "";
@@ -41,5 +45,6 @@ namespace HenryHoffman.UnlockProtocol
             }
             return address;
         }
+        */
     }
 }

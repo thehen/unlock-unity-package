@@ -14,8 +14,7 @@ namespace HenryHoffman.UnlockProtocol
             [JsonIgnore]
             public LockConfig[] lockConfigs;
 
-            [HideInInspector]
-            public StringLockDictionary locks;
+            public Dictionary<string, LockConfig.Lock> locks = new Dictionary<string, LockConfig.Lock>();
 
             public string icon;
             public CallToAction callToAction;
@@ -41,13 +40,12 @@ namespace HenryHoffman.UnlockProtocol
         public string GetSerialized()
         {
             config.locks.Clear();
-            foreach (var thisLock in config.lockConfigs)
+
+            foreach (var lockConfig in config.lockConfigs)
             {
-                foreach (var lockConfig in thisLock.locks)
-                {
-                    config.locks.Add(lockConfig.Key, lockConfig.Value);
-                }
+                config.locks.Add(lockConfig.theLock.address, lockConfig.theLock);
             }
+
             return JsonConvert.SerializeObject(config);
         }
     }

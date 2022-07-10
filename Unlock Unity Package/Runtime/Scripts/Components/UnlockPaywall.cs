@@ -10,20 +10,29 @@ namespace HenryHoffman.UnlockProtocol
         public UnityEvent stateUnlocked;
         public UnityEvent stateLocked;
 
+#if !UNITY_EDITOR && UNITY_WEBGL
         [DllImport("__Internal")]
         private static extern void InitializePaywallJs(string str);
 
         [DllImport("__Internal")]
         private static extern void LoadCheckoutModalJs(string str);
-
+#else
+        private static void InitializePaywallJs(string paywallConfig) { Errors.UnsupportedPlatformOrEditor(); }
+        private static void LoadCheckoutModalJs(string lockConfig) { Errors.UnsupportedPlatformOrEditor(); }
+#endif
         private void Start()
         {
+            Debug.Log(paywallConfig.GetSerialized());
             InitializePaywallJs(paywallConfig.GetSerialized());
         }
 
         public void LoadCheckoutModal( LockConfig lockConfig )
         {
-            LoadCheckoutModalJs(lockConfig.GetSerialized());
+            paywallConfig.config.locks = lockConfig.GetDictionary();
+
+            Debug.Log(paywallConfig.GetSerialized());
+
+            LoadCheckoutModalJs(paywallConfig.GetSerialized());
         }
 
         public void UpdateStatus( string status )

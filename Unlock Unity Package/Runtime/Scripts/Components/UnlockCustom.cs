@@ -31,29 +31,40 @@ namespace HenryHoffman.UnlockProtocol
 
         public static UnlockCustom Instance { get; private set; }
 
+#if !UNITY_EDITOR && UNITY_WEBGL
         [DllImport("__Internal")]
         private static extern string ConnectMetaMaskJs();
 
         [DllImport("__Internal")]
-        private static extern string ConnectWalletConnectJs();
+        private static extern void ConnectWalletConnectJs();
 
         [DllImport("__Internal")]
-        private static extern void GetLockJs(string str);
+        private static extern void GetLockJs(string lockConfig);
 
         [DllImport("__Internal")]
-        private static extern void InitializeJs(string network);
+        private static extern void InitializeJs(string networkConfig);
 
         [DllImport("__Internal")]
-        private static extern void PurchaseKeyJs(string network);
+        private static extern void PurchaseKeyJs(string lockConfig);
 
         [DllImport("__Internal")]
-        private static extern void GetHasValidKeyJs(string network);
+        private static extern void GetHasValidKeyJs(string lockConfig);
 
         [DllImport("__Internal")]
-        private static extern string GetBalanceJs(string adddress);
+        private static extern void GetBalanceJs(string adddress);
 
         [DllImport("__Internal")]
-        private static extern string GetNetworkIdJs();
+        private static extern void GetNetworkIdJs();
+#else
+        private static void ConnectMetaMaskJs() { Errors.UnsupportedPlatformOrEditor(); }
+        private static void ConnectWalletConnectJs() { Errors.UnsupportedPlatformOrEditor(); }
+        private static void GetLockJs(string lockConfig) { Errors.UnsupportedPlatformOrEditor(); }
+        private static void InitializeJs(string networkConfig) { Errors.UnsupportedPlatformOrEditor(); }
+        private static void PurchaseKeyJs(string lockConfig) { Errors.UnsupportedPlatformOrEditor(); }
+        private static void GetHasValidKeyJs(string lockConfig) { Errors.UnsupportedPlatformOrEditor(); }
+        private static void GetBalanceJs(string adddress) { Errors.UnsupportedPlatformOrEditor(); }
+        private static void GetNetworkIdJs() { Errors.UnsupportedPlatformOrEditor(); }
+#endif
 
         public class LockErrorParams
         {
@@ -65,7 +76,8 @@ namespace HenryHoffman.UnlockProtocol
         {
             public bool hasKey;
             public string recipient;
-            public LockConfig lockConfig;
+            public string lockAddress;
+            public int network;
         }
 
         private void Awake()
@@ -97,8 +109,9 @@ namespace HenryHoffman.UnlockProtocol
         public void GetHasValidKey(LockConfig lockConfig, string recipient)
         {
             GetHasValidKeySuccessParams getHasValidKeyParams = new GetHasValidKeySuccessParams();
-            getHasValidKeyParams.lockConfig = lockConfig;
             getHasValidKeyParams.recipient = recipient;
+            getHasValidKeyParams.lockAddress = lockConfig.theLock.address;
+            getHasValidKeyParams.network = lockConfig.theLock.network;
             GetHasValidKeyJs(JsonConvert.SerializeObject(getHasValidKeyParams));
         }
 

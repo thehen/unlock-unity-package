@@ -38,6 +38,7 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "initializePaywall": () => (/* binding */ initializePaywall),
+/* harmony export */   "initialize": () => (/* binding */ initialize),
 /* harmony export */   "loadCheckoutModal": () => (/* binding */ loadCheckoutModal)
 /* harmony export */ });
 async function initializePaywall (paywallConfig) {
@@ -55,6 +56,10 @@ async function initializePaywall (paywallConfig) {
   window.addEventListener('unlockProtocol.transactionSent', function (event) {
     window.gameInstance.SendMessage('UnlockPaywall', 'UpdateHash', event.detail.hash)
   })
+}
+
+async function initialize () {
+  console.error('Error: calling custom function on Paywall template. Ensure you have the custom WebGL template selected in your Unity build settings.')
 }
 
 async function loadCheckoutModal (lockConfig) {

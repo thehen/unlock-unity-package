@@ -15,6 +15,10 @@ export async function initializePaywall (paywallConfig) {
   })
 }
 
+export async function initialize () {
+  console.error('Error: calling custom function on Paywall template. Ensure you have the custom WebGL template selected in your Unity build settings.')
+}
+
 export async function loadCheckoutModal (lockConfig) {
   const config = JSON.parse(lockConfig)
   window.unlockProtocol.loadCheckoutModal(config)

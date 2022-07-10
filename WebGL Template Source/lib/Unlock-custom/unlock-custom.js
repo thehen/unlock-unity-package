@@ -81527,6 +81527,7 @@ __webpack_require__.d(__webpack_exports__, {
   "getLock": () => (/* binding */ getLock),
   "getNetworkId": () => (/* binding */ getNetworkId),
   "initialize": () => (/* binding */ initialize),
+  "initializePaywall": () => (/* binding */ initializePaywall),
   "purchaseKey": () => (/* binding */ purchaseKey)
 });
 
@@ -84165,6 +84166,10 @@ async function initialize (networksJson) {
   walletService = new WalletService(networks)
 }
 
+async function initializePaywall () {
+  console.error('Error: calling Paywall function on Custom template. Ensure you have the Paywall WebGL template selected in your Unity build settings.')
+}
+
 async function connectMetaMask () {
   provider = new ethers.providers.Web3Provider(window.ethereum, 'any')
 
@@ -84235,8 +84240,8 @@ async function connected () {
 
 async function getLock (lockConfig) {
   const config = JSON.parse(lockConfig)
-  const lockAddress = Object.keys(config.locks)[0]
-  const network = config.locks[Object.keys(config.locks)[0]].network
+  const lockAddress = Object.keys(config)[0]
+  const network = config[Object.keys(config)[0]].network
 
   try {
     const lock = await web3service.getLock(lockAddress, network)
@@ -84256,9 +84261,8 @@ async function getLock (lockConfig) {
 
 async function getHasValidKey (hasValidKeyParamsJson) {
   const hasValidKeyParams = JSON.parse(hasValidKeyParamsJson)
-  const locks = hasValidKeyParams.lockConfig.locks
-  const lockAddress = Object.keys(locks)[0]
-  const network = locks[Object.keys(locks)[0]].network
+  const lockAddress = hasValidKeyParams.lockAddress
+  const network = hasValidKeyParams.network
 
   try {
     const expiration = await web3service.getKeyExpirationByLockForOwner(
@@ -84283,7 +84287,7 @@ async function getHasValidKey (hasValidKeyParamsJson) {
 
 async function purchaseKey (lockConfig) {
   const config = JSON.parse(lockConfig)
-  const lockAddress = Object.keys(config.locks)[0]
+  const lockAddress = Object.keys(config)[0]
 
   await walletService.connect(provider, signer)
 

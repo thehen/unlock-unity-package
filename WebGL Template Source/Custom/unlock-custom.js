@@ -31,6 +31,10 @@ export async function initialize (networksJson) {
   walletService = new WalletService(networks)
 }
 
+export async function initializePaywall () {
+  console.error('Error: calling Paywall function on Custom template. Ensure you have the Paywall WebGL template selected in your Unity build settings.')
+}
+
 export async function connectMetaMask () {
   provider = new ethers.providers.Web3Provider(window.ethereum, 'any')
 
@@ -101,8 +105,8 @@ export async function connected () {
 
 export async function getLock (lockConfig) {
   const config = JSON.parse(lockConfig)
-  const lockAddress = Object.keys(config.locks)[0]
-  const network = config.locks[Object.keys(config.locks)[0]].network
+  const lockAddress = Object.keys(config)[0]
+  const network = config[Object.keys(config)[0]].network
 
   try {
     const lock = await web3service.getLock(lockAddress, network)
@@ -122,9 +126,8 @@ export async function getLock (lockConfig) {
 
 export async function getHasValidKey (hasValidKeyParamsJson) {
   const hasValidKeyParams = JSON.parse(hasValidKeyParamsJson)
-  const locks = hasValidKeyParams.lockConfig.locks
-  const lockAddress = Object.keys(locks)[0]
-  const network = locks[Object.keys(locks)[0]].network
+  const lockAddress = hasValidKeyParams.lockAddress
+  const network = hasValidKeyParams.network
 
   try {
     const expiration = await web3service.getKeyExpirationByLockForOwner(
@@ -149,7 +152,7 @@ export async function getHasValidKey (hasValidKeyParamsJson) {
 
 export async function purchaseKey (lockConfig) {
   const config = JSON.parse(lockConfig)
-  const lockAddress = Object.keys(config.locks)[0]
+  const lockAddress = Object.keys(config)[0]
 
   await walletService.connect(provider, signer)
 

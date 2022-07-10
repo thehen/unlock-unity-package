@@ -33,5 +33,14 @@
     ],
     "dependencies": {
         "com.unity.nuget.newtonsoft-json": "2.0.0"
-    }
+    },
+    	"files": [
+		"*.md",
+		"*.meta",
+		"Samples~",
+		"WebGLTemplates~",
+		"Editor",
+		"Runtime",
+        "Config"
+	]
 }

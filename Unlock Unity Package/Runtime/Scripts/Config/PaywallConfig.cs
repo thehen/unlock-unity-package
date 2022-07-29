@@ -18,7 +18,7 @@ namespace HenryHoffman.UnlockProtocol
 
             public string icon;
             public CallToAction callToAction;
-            public string metadataInputs; // todo
+            public string[] metadataInputs; // todo
             public bool persistentCheckout = false;
             public bool useDelegatedProvider = false;
             public int network;

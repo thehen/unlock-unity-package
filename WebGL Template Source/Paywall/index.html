@@ -13,12 +13,18 @@
       (function(d, s) {
         var js = d.createElement(s),
         sc = d.getElementsByTagName(s)[0];
-        js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
+        #if UNLOCK_PAYWALL_BETA
+          js.src="https://staging-paywall.unlock-protocol.com/static/unlock.latest.min.js?alpha=true";
+        #else
+          js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
+        #endif
         sc.parentNode.insertBefore(js, sc); }(document, "script"));
     </script>
 
     <script>
       var unlockProtocolConfig = {
+        "locks": {
+        }
       }
     </script>
 

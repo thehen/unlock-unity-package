@@ -22,16 +22,12 @@ namespace HenryHoffman.UnlockProtocol
 #endif
         private void Start()
         {
-            Debug.Log(paywallConfig.GetSerialized());
             InitializePaywallJs(paywallConfig.GetSerialized());
         }
 
         public void LoadCheckoutModal( LockConfig lockConfig )
         {
             paywallConfig.config.locks = lockConfig.GetDictionary();
-
-            Debug.Log(paywallConfig.GetSerialized());
-
             LoadCheckoutModalJs(paywallConfig.GetSerialized());
         }
 

@@ -1,10 +1,5 @@
 import loadjs from '@beyondspace/loadjs'
 
-window.unlockProtocolConfig = {
-  locks: {
-  }
-}
-
 export async function initializePaywall (paywallConfig) {
   window.unlockProtocolConfig = JSON.parse(paywallConfig)
 

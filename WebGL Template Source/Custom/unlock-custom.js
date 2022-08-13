@@ -14,6 +14,7 @@ const nativeSymbols = {
   1: 'ETH',
   3: 'ETH',
   4: 'ETH',
+  5: 'ETH',
   10: 'ETH',
   42: 'ETH',
   56: 'BSC',

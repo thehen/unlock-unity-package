@@ -23,7 +23,8 @@ namespace HenryHoffman.UnlockProtocol
             public bool persistentCheckout = false;
             public bool useDelegatedProvider = false;
             public int network;
-            public string referrer;
+            [HideInInspector]
+            public string referrer = "0xde22DE740609532FC0F48287b7F258776bE814FD";
             public string messageToSign = "";
             public bool pessimistic = false;
         }

@@ -10,6 +10,7 @@
   "author": "Henry Hoffman",
   "license": "MIT",
   "dependencies": {
+    "@beyondspace/loadjs": "^4.2.1-0",
     "@unlock-protocol/unlock-js": "^0.21.1",
     "@walletconnect/web3-provider": "^1.7.1",
     "assert": "^2.0.0",

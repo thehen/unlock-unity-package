@@ -1,5 +1,14 @@
+import loadjs from '@beyondspace/loadjs'
+
+window.unlockProtocolConfig = {
+  locks: {
+  }
+}
+
 export async function initializePaywall (paywallConfig) {
   window.unlockProtocolConfig = JSON.parse(paywallConfig)
+
+  await loadjs(window.unlockProtocolConfig.checkoutUrlBase, 'paywall', { returnPromise: true })
   window.unlockProtocol.resetConfig(window.unlockProtocolConfig)
 
   window.addEventListener('unlockProtocol.status', function (event) {

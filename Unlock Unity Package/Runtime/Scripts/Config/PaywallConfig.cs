@@ -16,6 +16,7 @@ namespace HenryHoffman.UnlockProtocol
 
             public Dictionary<string, LockConfig.Lock> locks = new Dictionary<string, LockConfig.Lock>();
 
+            public string checkoutUrlBase = "https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
             public string icon;
             public CallToAction callToAction;
             public string[] metadataInputs; // todo

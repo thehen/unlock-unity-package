@@ -154,13 +154,15 @@ export async function getHasValidKey (hasValidKeyParamsJson) {
 export async function purchaseKey (lockConfig) {
   const config = JSON.parse(lockConfig)
   const lockAddress = Object.keys(config)[0]
+  const referrer = Object.values(config)[0].referrer
 
   await walletService.connect(provider, signer)
 
   try {
     await walletService.purchaseKey(
       {
-        lockAddress
+        lockAddress: lockAddress,
+        referrer: referrer
       }
     )
     window.gameInstance.SendMessage(gameObjectName, 'PurchaseKeySuccess', lockAddress)

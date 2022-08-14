@@ -43,15 +43,5 @@ namespace HenryHoffman.UnlockProtocol
                     break;
             }
         }
-
-        public void UpdateAddress( string address )
-        {
-            
-        }
-        public void UpdateHash( string hash )
-        {
-            
-        }
-
     }
 }

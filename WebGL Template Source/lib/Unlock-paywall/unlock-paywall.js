@@ -416,14 +416,6 @@ async function initializePaywall (paywallConfig) {
     console.log(event.detail.state)
     window.gameInstance.SendMessage('UnlockPaywall', 'UpdateStatus', event.detail.state)
   })
-
-  window.addEventListener('unlockProtocol.authenticated', function (event) {
-    window.gameInstance.SendMessage('UnlockPaywall', 'UpdateAddress', event.detail.address)
-  })
-
-  window.addEventListener('unlockProtocol.transactionSent', function (event) {
-    window.gameInstance.SendMessage('UnlockPaywall', 'UpdateHash', event.detail.hash)
-  })
 }
 
 async function initialize () {

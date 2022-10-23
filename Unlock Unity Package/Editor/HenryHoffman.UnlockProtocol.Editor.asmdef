@@ -1,5 +1,5 @@
 {
-    "name": "HenryHoffman.UnlockProtocol.Editor",
+    "name": "UnlockProtocol.Editor",
     "rootNamespace": "",
     "references": [
         "GUID:d148605d39007403192f656e2c9512b6"

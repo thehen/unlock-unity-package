@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HenryHoffman.UnlockProtocol
+namespace UnlockProtocol
 {
     public class Errors : MonoBehaviour
     {

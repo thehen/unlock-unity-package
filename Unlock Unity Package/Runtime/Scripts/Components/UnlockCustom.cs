@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 
-namespace HenryHoffman.UnlockProtocol
+namespace UnlockProtocol
 {
     public class UnlockCustom : MonoBehaviour
     {

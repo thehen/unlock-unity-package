@@ -54,5 +54,15 @@ module.exports = {
         extractComments: false
       })
     ]
+  },
+  module: {
+    rules: [
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false
+        }
+      }
+    ]
   }
 }

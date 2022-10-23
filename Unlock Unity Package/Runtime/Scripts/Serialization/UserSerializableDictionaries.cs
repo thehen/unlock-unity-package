@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HenryHoffman.UnlockProtocol
+namespace UnlockProtocol
 {
     [Serializable]
     public class StringLockDictionary : SerializableDictionary<string, LockConfig.Lock> {}

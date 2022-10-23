@@ -398,8 +398,8 @@ var __webpack_exports__ = {};
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "initializePaywall": () => (/* binding */ initializePaywall),
 /* harmony export */   "initialize": () => (/* binding */ initialize),
+/* harmony export */   "initializePaywall": () => (/* binding */ initializePaywall),
 /* harmony export */   "loadCheckoutModal": () => (/* binding */ loadCheckoutModal)
 /* harmony export */ });
 /* harmony import */ var _beyondspace_loadjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5370);

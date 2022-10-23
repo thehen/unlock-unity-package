@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections;
 
-namespace HenryHoffman.UnlockProtocol
+namespace UnlockProtocol
 {
     [CustomEditor(typeof(UnlockPaywall))]
 

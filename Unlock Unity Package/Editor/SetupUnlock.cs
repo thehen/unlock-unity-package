@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
-namespace HenryHoffman.UnlockProtocol
+namespace UnlockProtocol
 {
     public class SetupUnlock : MonoBehaviour
     {
@@ -18,11 +18,11 @@ namespace HenryHoffman.UnlockProtocol
                 Directory.CreateDirectory(webglDir);
             }
 
-            source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplatesSource/Unlock-custom";
+            source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-custom";
             target = webglDir + "/Unlock-custom";
             FileUtil.CopyFileOrDirectory(source, target);
 
-            source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplatesSource/Unlock-paywall";
+            source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-paywall";
             target = webglDir + "/Unlock-paywall";
             FileUtil.CopyFileOrDirectory(source, target);
 

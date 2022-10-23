@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Network Config
   m_EditorClassIdentifier: 
   networks:
-    m_keys: 01000000040000006400000089000000
+    m_keys: 0100000004000000640000008900000005000000
     m_values:
     - provider: https://eth-mainnet.alchemyapi.io/v2/b7Mxclz5hGyHqoeodGLQ17F5Qi97S7xJ
       locksmithUri: https://locksmith.unlock-protocol.com
@@ -31,6 +31,11 @@ MonoBehaviour:
       unlockAppUrl: https://app.unlock-protocol.com
       subgraphURI: 
     - provider: https://polygon-rpc.com
+      locksmithUri: https://locksmith.unlock-protocol.com
+      unlockAddress: 
+      unlockAppUrl: https://app.unlock-protocol.com
+      subgraphURI: 
+    - provider: https://eth-goerli.g.alchemy.com/v2/X_NTTWlPzAwq3_MzYvUShi4BDTWU2gdn
       locksmithUri: https://locksmith.unlock-protocol.com
       unlockAddress: 
       unlockAppUrl: https://app.unlock-protocol.com

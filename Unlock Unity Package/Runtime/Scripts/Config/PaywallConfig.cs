@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using Newtonsoft.Json;
 
-namespace HenryHoffman.UnlockProtocol
+namespace UnlockProtocol
 {
     [CreateAssetMenu(fileName = "Paywall Config", menuName = "Unlock/Paywall Config", order = 1)]
     public class PaywallConfig : ScriptableObject

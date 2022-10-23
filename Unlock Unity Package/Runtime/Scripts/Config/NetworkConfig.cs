@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using Newtonsoft.Json;
 
-namespace HenryHoffman.UnlockProtocol
+namespace UnlockProtocol
 {
     [CreateAssetMenu(fileName = "Network Config", menuName = "Unlock/Network Config", order = 1)]
 

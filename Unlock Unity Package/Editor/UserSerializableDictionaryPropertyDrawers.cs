@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace UnlockProtocol
+namespace HenryHoffman.UnlockProtocol
 {
-    [CustomPropertyDrawer(typeof(StringLockDictionary))]
-    [CustomPropertyDrawer(typeof(ChainIDNetworkDictionary))]
-    public class AnySerializableDictionaryPropertyDrawer : SerializableDictionaryPropertyDrawer { }
-    public class AnySerializableDictionaryStoragePropertyDrawer : SerializableDictionaryStoragePropertyDrawer { }
+    [CustomPropertyDrawer(typeof(NetworkConfig.ChainIDNetworkDictionary))]
+    internal class AnySerializableDictionaryPropertyDrawer : SerializableDictionaryPropertyDrawer { }
+    internal class AnySerializableDictionaryStoragePropertyDrawer : SerializableDictionaryStoragePropertyDrawer { }
 }

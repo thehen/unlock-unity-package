@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using Newtonsoft.Json;
 
-namespace UnlockProtocol
+namespace HenryHoffman.UnlockProtocol
 {
     [CreateAssetMenu(fileName = "Lock Config", menuName = "Unlock/Lock Config", order = 1)]
 
@@ -31,23 +31,14 @@ namespace UnlockProtocol
             return dict;
         }
 
-        public string GetSerialized()
+        /// <summary>
+        /// Serializes the <c>Lock</c> object
+        /// </summary>
+        /// <returns>A serialized json string of the lock</returns>
+        internal string GetSerialized()
         {
             var dict = GetDictionary();
             return JsonConvert.SerializeObject(dict);
         }
-
-        /*
-        public string GetFirstAddress()
-        {
-            string address = "";
-            foreach (var l in locks)
-            {
-                address = l.Key;
-                break;
-            }
-            return address;
-        }
-        */
     }
 }

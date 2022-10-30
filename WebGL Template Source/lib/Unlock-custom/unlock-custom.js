@@ -115118,7 +115118,6 @@ const nativeSymbols = {
 
 async function initialize (networksJson) {
   networks = JSON.parse(networksJson)
-  console.log(networks)
   web3service = new Web3Service(networks)
   walletService = new WalletService(networks)
 }

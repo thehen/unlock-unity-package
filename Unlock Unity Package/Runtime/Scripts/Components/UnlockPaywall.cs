@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace UnlockProtocol
+namespace HenryHoffman.UnlockProtocol
 {
     public class UnlockPaywall : MonoBehaviour
     {

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnlockProtocol
+namespace HenryHoffman.UnlockProtocol
 {
-    public class Errors : MonoBehaviour
+    internal class Errors : MonoBehaviour
     {
         public static void UnsupportedPlatformOrEditor()
         {

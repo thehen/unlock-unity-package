@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System;
 using Newtonsoft.Json;
 
-namespace UnlockProtocol
+namespace HenryHoffman.UnlockProtocol
 {
     [CreateAssetMenu(fileName = "Network Config", menuName = "Unlock/Network Config", order = 1)]
 
     public class NetworkConfig : ScriptableObject
     {
+
+        [Serializable]
+        public class ChainIDNetworkDictionary : SerializableDictionary<int, NetworkConfig.Network> { }
+
         public ChainIDNetworkDictionary networks;
 
         [Serializable]

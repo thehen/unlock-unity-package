@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 
 namespace HenryHoffman.UnlockProtocol
 {
-
     /// <summary>
     ///   The Unlock Protocol <c>Lock</c> object. This object represents the retrieved lock, and contains all the lock details.
     /// </summary>
@@ -13,62 +12,62 @@ namespace HenryHoffman.UnlockProtocol
     public class Lock
     {
         /// <summary>
-        /// TODO
+        /// Address of the lock
         /// </summary>
         public string lockAddress;
 
         /// <summary>
-        /// TODO
+        /// As of block number
         /// </summary>
         public int asOf;
 
         /// <summary>
-        /// TODO
+        /// The balance of the lock
         /// </summary>
         public string balance;
 
         /// <summary>
-        /// TODO
+        /// The beneficiary who recieves funds on withdrawl
         /// </summary>
         public string beneficiary;
 
         /// <summary>
-        /// TODO
+        /// The contract address for the lock currency
         /// </summary>
         public string currencyContractAddress;
 
         /// <summary>
-        /// TODO
+        /// The symbol used for the lock currency
         /// </summary>
         public string currencySymbol;
 
         /// <summary>
-        /// TODO
+        /// The duration until expiration of the lock
         /// </summary>
         public int expirationDuration;
 
         /// <summary>
-        /// TODO
+        /// The price of a key for the lock
         /// </summary>
         public string keyPrice;
 
         /// <summary>
-        /// TODO
+        /// The maximum number of keys available
         /// </summary>
         public int maxNumberOfKeys;
 
         /// <summary>
-        /// TODO
+        /// The name of the lock
         /// </summary>
         public string name;
 
         /// <summary>
-        /// TODO
+        /// The number of outstanding keys available
         /// </summary>
         public int outstandingKeys;
 
         /// <summary>
-        /// TODO
+        /// Public lock version
         /// </summary>
         public int publicLockVersion;
 

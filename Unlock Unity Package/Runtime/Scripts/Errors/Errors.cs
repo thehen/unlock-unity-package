@@ -10,6 +10,12 @@ namespace HenryHoffman.UnlockProtocol
         {
             Debug.LogError("Error: Unlock Protocol needs to run in a WebGL build. Editor and other platforms are unsupported.");
         }
+
+        public static void MissingNetworkConfig()
+        {
+            Debug.LogError("Error: a NetworkConfig needs to be assigned in your UnlockCustom component.");
+        }
+
     }
 }
 

@@ -115092,6 +115092,8 @@ class WalletConnectProvider extends ProviderEngine {
 const { WalletService, Web3Service } = __webpack_require__(5681)
 const { ethers } = __webpack_require__(6934)
 
+window.ethereum.autoRefreshOnNetworkChange = false
+
 const gameObjectName = 'UnlockCustom'
 
 let networks

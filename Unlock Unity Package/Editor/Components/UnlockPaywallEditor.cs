@@ -7,7 +7,7 @@ using System.Collections;
 namespace HenryHoffman.UnlockProtocol.Paywall
 {
     /// <summary>
-    /// TODO 
+    /// Forces the Unlock Paywall manager to have a fixed name, otherwise JavaScript can't send messages to the object 
     /// </summary>
     [CustomEditor(typeof(UnlockPaywall))]
     public class UnlockPaywallEditor : Editor

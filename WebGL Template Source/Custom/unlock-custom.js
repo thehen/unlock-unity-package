@@ -2,6 +2,8 @@ import WalletConnectProvider from '@walletconnect/web3-provider'
 const { WalletService, Web3Service } = require('@unlock-protocol/unlock-js')
 const { ethers } = require('ethers')
 
+window.ethereum.autoRefreshOnNetworkChange = false
+
 const gameObjectName = 'UnlockCustom'
 
 let networks

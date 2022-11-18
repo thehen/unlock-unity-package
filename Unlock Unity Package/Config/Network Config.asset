@@ -13,30 +13,73 @@ MonoBehaviour:
   m_Name: Network Config
   m_EditorClassIdentifier: 
   networks:
-    m_keys: 0100000004000000640000008900000005000000
-    m_values:
-    - provider: https://eth-mainnet.alchemyapi.io/v2/b7Mxclz5hGyHqoeodGLQ17F5Qi97S7xJ
-      locksmithUri: https://locksmith.unlock-protocol.com
-      unlockAddress: 
-      unlockAppUrl: https://app.unlock-protocol.com
-      subgraphURI: 
-    - provider: https://eth-rinkeby.alchemyapi.io/v2/n0NXRSZ9olpkJUPDLBC00Es75jaqysyT
-      locksmithUri: https://locksmith.unlock-protocol.com
-      unlockAddress: 
-      unlockAppUrl: https://app.unlock-protocol.com
-      subgraphURI: 
-    - provider: https://rpc.xdaichain.com/
-      locksmithUri: https://locksmith.unlock-protocol.com
-      unlockAddress: 
-      unlockAppUrl: https://app.unlock-protocol.com
-      subgraphURI: 
-    - provider: https://polygon-rpc.com
-      locksmithUri: https://locksmith.unlock-protocol.com
-      unlockAddress: 
-      unlockAppUrl: https://app.unlock-protocol.com
-      subgraphURI: 
-    - provider: https://eth-goerli.g.alchemy.com/v2/X_NTTWlPzAwq3_MzYvUShi4BDTWU2gdn
-      locksmithUri: https://locksmith.unlock-protocol.com
-      unlockAddress: 
-      unlockAppUrl: https://app.unlock-protocol.com
-      subgraphURI: 
+  - networkName: Ethereum
+    chainID: 1
+    provider: https://rpc.unlock-protocol.com/1
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x3d5409CcE1d45233dE1D4eBDEe74b8E004abDD13
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/explorer/subgraph/unlock-protocol/mainnet-v2
+  - networkName: Goerli (Testnet)
+    chainID: 5
+    provider: https://rpc.unlock-protocol.com/5
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x627118a4fB747016911e5cDA82e2E77C531e8206
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/hosted-service/subgraph/unlock-protocol/goerli-v2
+  - networkName: Gnosis Chain
+    chainID: 100
+    provider: https://rpc.unlock-protocol.com/100
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x1bc53f4303c711cc693F6Ec3477B83703DcB317f
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/explorer/subgraph/unlock-protocol/gnosis-v2
+  - networkName: Polygon
+    chainID: 137
+    provider: https://rpc.unlock-protocol.com/137
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0xE8E5cd156f89F7bdB267EabD5C43Af3d5AF2A78f
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/explorer/subgraph/unlock-protocol/polygon-v2
+  - networkName: Optimism
+    chainID: 10
+    provider: https://rpc.unlock-protocol.com/10
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x99b1348a9129ac49c6de7F11245773dE2f51fB0c
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/hosted-service/subgraph/unlock-protocol/optimism-v2
+  - networkName: Binance Smart Chain
+    chainID: 56
+    provider: https://rpc.unlock-protocol.com/56
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0xeC83410DbC48C7797D2f2AFe624881674c65c856
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/hosted-service/subgraph/unlock-protocol/bsc-v2
+  - networkName: Arbitrum
+    chainID: 42161
+    provider: https://rpc.unlock-protocol.com/42161
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x1FF7e338d5E582138C46044dc238543Ce555C963
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/hosted-service/subgraph/unlock-protocol/arbitrum-v2
+  - networkName: Celo
+    chainID: 42220
+    provider: https://rpc.unlock-protocol.com/42220
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x1FF7e338d5E582138C46044dc238543Ce555C963
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/hosted-service/subgraph/unlock-protocol/celo-v2
+  - networkName: Avalanche (C-Chain)
+    chainID: 43114
+    provider: https://rpc.unlock-protocol.com/43114
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x70cBE5F72dD85aA634d07d2227a421144Af734b3
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/hosted-service/subgraph/unlock-protocol/avalanche-v2
+  - networkName: Mumbai (Polygon)
+    chainID: 80001
+    provider: https://rpc.unlock-protocol.com/80001
+    locksmithUri: https://locksmith.unlock-protocol.com
+    unlockAddress: 0x1FF7e338d5E582138C46044dc238543Ce555C963
+    unlockAppUrl: https://app.unlock-protocol.com
+    subgraphURI: https://thegraph.com/hosted-service/subgraph/unlock-protocol/mumbai-v2

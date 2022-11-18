@@ -11,7 +11,7 @@ namespace HenryHoffman.UnlockProtocol.Paywall
     [CreateAssetMenu(fileName = "Paywall Config", menuName = "Unlock/Paywall Config", order = 1)]
     public class PaywallConfig : ScriptableObject
     {
-        internal Config config;
+        public Config config;
 
         /// <summary>
         /// The paywall configuration class. This is where paywalls used in the application are defined.
@@ -76,6 +76,7 @@ namespace HenryHoffman.UnlockProtocol.Paywall
             /// </summary>
             public bool pessimistic = false;
 
+            [JsonProperty]
             internal Dictionary<string, LockConfig.Lock> locks = new Dictionary<string, LockConfig.Lock>();
         }
 

@@ -23,6 +23,19 @@ namespace HenryHoffman.UnlockProtocol
         public class Network
         {
             /// <summary>
+            /// Network name
+            /// </summary>
+            [JsonIgnore]
+            public string networkName;
+
+            /// <summary>
+            /// Network chain ID. See <a href="https://docs.unlock-protocol.com/core-protocol/unlock/networks/">here</a> for an updated list of networks that Unlock Protocol supports.
+            /// </summary>
+            [JsonIgnore]
+            [Tooltip("Network chain ID")]
+            public int chainID;
+
+            /// <summary>
             /// Ethereum Gateway url
             /// </summary>
             public string provider;
@@ -46,13 +59,6 @@ namespace HenryHoffman.UnlockProtocol
             /// The Subgraph Url
             /// </summary>
             public string subgraphURI;
-
-            /// <summary>
-            /// Network chain ID. See <a href="https://docs.unlock-protocol.com/core-protocol/unlock/networks/">here</a> for an updated list of networks that Unlock Protocol supports.
-            /// </summary>
-            [JsonIgnore]
-            [Tooltip("Network chain ID")]
-            public int chainID;
         }
 
         /// <summary>

@@ -406,6 +406,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _beyondspace_loadjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_beyondspace_loadjs__WEBPACK_IMPORTED_MODULE_0__);
 
 
+window.ethereum.autoRefreshOnNetworkChange = false
+
 async function initializePaywall (paywallConfig) {
   window.unlockProtocolConfig = JSON.parse(paywallConfig)
 
@@ -424,6 +426,7 @@ async function initialize () {
 
 async function loadCheckoutModal (lockConfig) {
   const config = JSON.parse(lockConfig)
+  console.log(config)
   window.unlockProtocol.loadCheckoutModal(config)
 }
 

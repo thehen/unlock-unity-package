@@ -14,9 +14,9 @@ namespace HenryHoffman.UnlockProtocol
             string source;
             string target;
 
-            if (!Directory.Exists(Application.dataPath + "WebGLTemplates"))
+            if (!Directory.Exists(Application.dataPath + "/WebGLTemplates"))
             {
-                Directory.CreateDirectory(Application.dataPath + "WebGLTemplates");
+                Directory.CreateDirectory(Application.dataPath + "/WebGLTemplates");
             }
 
             source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplatesSource/Unlock-custom";

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 using System.IO;
+using System;
 
 #if UNITY_EDITOR
 namespace HenryHoffman.UnlockProtocol
@@ -10,14 +11,12 @@ namespace HenryHoffman.UnlockProtocol
         [MenuItem("Unlock Protocol/Setup Unlock Protocol")]
         static void Setup()
         {
+            string assetsPath = Application.dataPath;
             string webglDir = "Assets/WebGLTemplates";
             string source;
             string target;
 
-            if (!Directory.Exists(webglDir))
-            {
-                Directory.CreateDirectory(webglDir);
-            }
+            System.IO.Directory.CreateDirectory(assetsPath + "/WebGLTemplates");
 
             source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-custom";
             target = webglDir + "/Unlock-custom";

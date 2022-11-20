@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEditor;
 using System.IO;
-using System;
 
 #if UNITY_EDITOR
 namespace HenryHoffman.UnlockProtocol
@@ -15,13 +14,16 @@ namespace HenryHoffman.UnlockProtocol
             string source;
             string target;
 
-            AssetDatabase.CreateFolder("Assets", "WebGLTemplates");
+            if (!Directory.Exists(Application.dataPath + "WebGLTemplates"))
+            {
+                Directory.CreateDirectory(Application.dataPath + "WebGLTemplates");
+            }
 
-            source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-custom";
+            source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplatesSource/Unlock-custom";
             target = webglDir + "/Unlock-custom";
             FileUtil.CopyFileOrDirectory(source, target);
 
-            source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-paywall";
+            source = "Packages/com.henryhoffman.unlockprotocol/WebGLTemplatesSource/Unlock-paywall";
             target = webglDir + "/Unlock-paywall";
             FileUtil.CopyFileOrDirectory(source, target);
 

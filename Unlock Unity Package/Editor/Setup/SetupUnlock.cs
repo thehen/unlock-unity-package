@@ -11,20 +11,19 @@ namespace HenryHoffman.UnlockProtocol
         [MenuItem("Unlock Protocol/Setup Unlock Protocol")]
         static void Setup()
         {
-            string assetsPath = Application.dataPath;
             string webglDir = "Assets/WebGLTemplates";
             string source;
             string target;
 
-            System.IO.Directory.CreateDirectory(assetsPath + "/WebGLTemplates");
+            AssetDatabase.CreateFolder("Assets", "WebGLTemplates");
 
             source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-custom";
             target = webglDir + "/Unlock-custom";
-            FileUtil.CopyFileOrDirectory(source, target);
+            AssetDatabase.CopyAsset(source, target);
 
             source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-paywall";
             target = webglDir + "/Unlock-paywall";
-            FileUtil.CopyFileOrDirectory(source, target);
+            AssetDatabase.CopyAsset(source, target);
 
             AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
         }

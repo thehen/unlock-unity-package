@@ -426,7 +426,6 @@ async function initialize () {
 
 async function loadCheckoutModal (lockConfig) {
   const config = JSON.parse(lockConfig)
-  console.log(config)
   window.unlockProtocol.loadCheckoutModal(config)
 }
 

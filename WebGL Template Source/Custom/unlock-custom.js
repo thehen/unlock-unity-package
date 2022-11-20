@@ -133,19 +133,7 @@ export async function getHasValidKey (hasValidKeyParamsJson) {
   const network = hasValidKeyParams.network
 
   try {
-    const expiration = await web3service.getKeyExpirationByLockForOwner(
-      lockAddress,
-      hasValidKeyParams.recipient,
-      network
-    )
-
-    const now = Math.floor(new Date().getTime() / 1000)
-
-    hasValidKeyParams.hasKey = false
-    if (expiration > now) {
-      hasValidKeyParams.hasKey = true
-    }
-
+    hasValidKeyParams.hasKey = await web3service.getHasValidKey(lockAddress, hasValidKeyParams.recipient, network)
     window.gameInstance.SendMessage(gameObjectName, 'GetHasValidKeySuccess', JSON.stringify(hasValidKeyParams))
   } catch (e) {
     console.error(e.message)

@@ -17,6 +17,8 @@ namespace HenryHoffman.UnlockProtocol
             string target;
 
             System.IO.Directory.CreateDirectory(assetsPath + "/WebGLTemplates");
+            System.IO.Directory.CreateDirectory(assetsPath + "/WebGLTemplates/Unlock-custom");
+            System.IO.Directory.CreateDirectory(assetsPath + "/WebGLTemplates/Unlock-paywall");
 
             source = "Packages/com.UnlockProtocol/WebGLTemplatesSource/Unlock-custom";
             target = webglDir + "/Unlock-custom";

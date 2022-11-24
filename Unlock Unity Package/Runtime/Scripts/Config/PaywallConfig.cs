@@ -112,7 +112,7 @@ namespace HenryHoffman.UnlockProtocol.Paywall
 
             foreach (var lockConfig in config.lockConfigs)
             {
-                config.locks.Add(lockConfig.@lock.address, lockConfig.@lock);
+                config.locks.Add(lockConfig.@lock.Address, lockConfig.@lock);
             }
 
             return JsonConvert.SerializeObject(config);

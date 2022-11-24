@@ -25,27 +25,37 @@ namespace HenryHoffman.UnlockProtocol
             /// <summary>
             /// Name of the lock
             /// </summary>
+            [SerializeField]
             [Tooltip("Name of the lock")]
-            public string name;
+            [JsonProperty]
+            private string name;
+            public string Name { get { return name; } set { name = value; } }
 
             /// <summary>
             /// Network chain ID. See <a href="https://docs.unlock-protocol.com/core-protocol/unlock/networks/">here</a> for an updated list of networks that Unlock Protocol supports.
             /// </summary>
+            [SerializeField]
             [Tooltip("Network chain ID")]
-            public int network;
+            [JsonProperty]
+            private int network;
+            public int Network { get { return network; } set { network = value; } }
 
             /// <summary>
             /// Unique lock address
             /// </summary>
+            [SerializeField]
             [JsonIgnore]
             [Tooltip("Unique lock address")]
-            public string address;
+            private string address;
+
+            public string Address { get { return address; } set { address = value; }  }
 
             /// <summary>
             /// The address which will receive UDT tokens (if the transaction is applicable)
             /// </summary>
-            [HideInInspector]
-            public string referrer = "0xde22DE740609532FC0F48287b7F258776bE814FD";
+            [JsonProperty]
+            private string referrer = "0xde22de740609532fc0f48287b7f258776be814fd";
+            public string Referrer { get { return referrer; } set { referrer = value; } }
         }
 
         /// <summary>
@@ -55,7 +65,7 @@ namespace HenryHoffman.UnlockProtocol
         internal Dictionary<string, Lock> GetDictionary()
         {
             var dict = new Dictionary<string, Lock>();
-            dict.Add(@lock.address, @lock);
+            dict.Add(@lock.Address, @lock);
             return dict;
         }
 

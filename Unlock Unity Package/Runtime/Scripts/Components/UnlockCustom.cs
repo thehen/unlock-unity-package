@@ -256,8 +256,8 @@ namespace HenryHoffman.UnlockProtocol.Custom
         {
             GetHasValidKeySuccessParams getHasValidKeyParams = new GetHasValidKeySuccessParams();
             getHasValidKeyParams.recipient = recipient;
-            getHasValidKeyParams.lockAddress = lockConfig.@lock.address;
-            getHasValidKeyParams.network = lockConfig.@lock.network;
+            getHasValidKeyParams.lockAddress = lockConfig.@lock.Address;
+            getHasValidKeyParams.network = lockConfig.@lock.Network;
             GetHasValidKeyJs(JsonConvert.SerializeObject(getHasValidKeyParams));
         }
 

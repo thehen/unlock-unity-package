@@ -68,7 +68,7 @@ export async function connectWalletConnect () {
   })
 
   const walletConnectProvider = new WalletConnectProvider({
-    rpc: rpc
+    rpc
   })
 
   try {
@@ -148,15 +148,19 @@ export async function purchaseKey (lockConfig) {
 
   await walletService.connect(provider, signer)
 
+  const lockAddressNormalized = ethers.utils.getAddress(lockAddress)
+  const referrerAddressNormalized = ethers.utils.getAddress(referrer)
+
   try {
     await walletService.purchaseKey(
       {
-        lockAddress: lockAddress,
-        referrer: referrer
+        lockAddress: lockAddressNormalized,
+        referrer: referrerAddressNormalized
       }
     )
     window.gameInstance.SendMessage(gameObjectName, 'PurchaseKeySuccess', lockAddress)
   } catch (e) {
+    console.log(e)
     console.error(e.message)
     window.gameInstance.SendMessage(gameObjectName, 'PurchaseKeyFailed', getLockErrorJson(lockAddress, e.message))
   }
@@ -187,8 +191,8 @@ export async function getBalance (address) {
 function getLockErrorJson (lockAddress, error) {
   const obj =
   {
-    lockAddress: lockAddress,
-    error: error
+    lockAddress,
+    error
   }
   return JSON.stringify(obj)
 }

@@ -415,7 +415,6 @@ async function initializePaywall (paywallConfig) {
   window.unlockProtocol.resetConfig(window.unlockProtocolConfig)
 
   window.addEventListener('unlockProtocol.status', function (event) {
-    console.log(event.detail.state)
     window.gameInstance.SendMessage('UnlockPaywall', 'UpdateStatus', event.detail.state)
   })
 }

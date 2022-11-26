@@ -1,17 +1,17 @@
 const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = {
+  mode: 'production',
   target: 'web',
   entry: {
     'Unlock-custom/unlock-custom': './Custom/unlock-custom.js',
     'Unlock-paywall/unlock-paywall': './Paywall/unlock-paywall.js'
   },
   output: {
-    path: path.resolve(__dirname, 'lib/'),
+    path: path.resolve(__dirname, '../Unlock Unity Package/WebGLTemplatesSource/'),
     filename: '[name].js',
     library: 'UnlockUnity',
     libraryTarget: 'var'
@@ -46,14 +46,6 @@ module.exports = {
       assert: require.resolve('assert/'),
       crypto: require.resolve('crypto-browserify')
     }
-  },
-  optimization: {
-    minimize: false,
-    minimizer: [
-      new TerserPlugin({
-        extractComments: false
-      })
-    ]
   },
   module: {
     rules: [

@@ -5,22 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | {{{ PRODUCT_NAME }}}</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    #if RESPONSIVE_AND_BORDERLESS
+    <link rel="stylesheet" href="TemplateData/responsive.css" />
+    #else
     <link rel="stylesheet" href="TemplateData/style.css" />
+    #endif
 
     <!-- Start Unlock Protocol -->
-
-    <script>
-      (function(d, s) {
-        var js = d.createElement(s),
-        sc = d.getElementsByTagName(s)[0];
-        js.src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js";
-        sc.parentNode.insertBefore(js, sc); }(document, "script"));
-    </script>
-
-    <script>
-      var unlockProtocolConfig = {
-      }
-    </script>
 
     <script src="unlock-paywall.js"></script>
 
@@ -38,11 +29,13 @@
       <div id="unity-mobile-warning">
         WebGL builds are not supported on mobile devices.
       </div>
+      #if !RESPONSIVE_AND_BORDERLESS
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">{{{ PRODUCT_NAME }}}</div>
       </div>
+      #endif
     </div>
     <script>
             var buildUrl = "Build";
@@ -67,7 +60,9 @@
             var canvas = document.querySelector("#unity-canvas");
             var loadingBar = document.querySelector("#unity-loading-bar");
             var progressBarFull = document.querySelector("#unity-progress-bar-full");
+            #if !RESPONSIVE_AND_BORDERLESS
             var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+            #endif
             var mobileWarning = document.querySelector("#unity-mobile-warning");
 
             if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -78,8 +73,10 @@
                 mobileWarning.style.display = "none";
               }, 5000);
             } else {
+              #if !RESPONSIVE_AND_BORDERLESS
               canvas.style.width = "{{{ WIDTH }}}px";
               canvas.style.height = "{{{ HEIGHT }}}px";
+              #endif
             }
       #if BACKGROUND_FILENAME
             canvas.style.background = "url('" + buildUrl + "/{{{ BACKGROUND_FILENAME.replace(/'/g, '%27') }}}') center / cover";
@@ -94,9 +91,11 @@
               }).then((unityInstance) => {
                 window.gameInstance = unityInstance;
                 loadingBar.style.display = "none";
+                #if !RESPONSIVE_AND_BORDERLESS
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };
+                #endif
               }).catch((message) => {
                 alert(message);
               });

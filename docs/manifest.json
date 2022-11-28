@@ -1,0 +1,537 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://thehen.github.io/unlock-unity-package/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://thehen.github.io/unlock-unity-package/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "/Users/henryhoffman/Desktop/Work/Unlock/Final/Package Test Projects/Unlock Source and Documentation/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Custom.UnlockCustom.GetHasValidKeySuccessParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Custom.UnlockCustom.GetHasValidKeySuccessParams.html",
+          "hash": "0gl0NV0Pkbnphq3YLRr8cew1sCghOLUjqWuSAVNycbQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Custom.UnlockCustom.LockErrorParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Custom.UnlockCustom.LockErrorParams.html",
+          "hash": "2okwz9W0h0Dm2Q4e730HZAJIIpK3bGI864TxlxjAmEA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Custom.UnlockCustom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Custom.UnlockCustom.html",
+          "hash": "Gd1Ngu9JauI62iP4T68QMkGkTBNNT+J+5/rF4dgK4x8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Custom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Custom.html",
+          "hash": "+BxQOPSLf8feMgDR4mAsLGYpKDOr+mFShU9ZzF0AsT4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Lock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Lock.html",
+          "hash": "bJcSiivvgqNpK08KxddtUvt55R1NWHH1ODMlDuOYZtw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.LockConfig.Lock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.LockConfig.Lock.html",
+          "hash": "2AcwR/fb5zSAV49U2USoluiaWHg6w+FrrTTxbTsrC54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.LockConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.LockConfig.html",
+          "hash": "REmGoFxdfgMwdm0gPqOotHtfOYwt6n9RyZD/mnPJDVo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.NetworkConfig.Network.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.NetworkConfig.Network.html",
+          "hash": "37nvYqgFi3s09w22qL2Y3a9e8bgquonRFImhoKCvLis="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.NetworkConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.NetworkConfig.html",
+          "hash": "ZYYMwvUdVTZ8tF1p3cE3DLzLJ1JwngyaviWqzR28MH4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.PaywallConfig.CallToAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.PaywallConfig.CallToAction.html",
+          "hash": "xdMpDU1063dPD+IaKrswIR4tRi/zv/Vwgd7G9UIA6KE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.PaywallConfig.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.PaywallConfig.Config.html",
+          "hash": "Vt1gLVZiK6E71lgusjNCLqUo4fbqftXLnOpKpkhS2yA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.PaywallConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.PaywallConfig.html",
+          "hash": "GWaOz8mYolLh8ARZZdvQ4AgWik6hU2U2brbABmqXEVU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.UnlockPaywall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.UnlockPaywall.html",
+          "hash": "Ta8zm8JvLfaUqBfdY3r6epJTHBWfysL0IEsSDw4xQoE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.Paywall.html",
+          "hash": "PxWCl5D49mBG6g0KyPX8Kh3K27LyLh6kUJkoYjB77X0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HenryHoffman.UnlockProtocol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HenryHoffman.UnlockProtocol.html",
+          "hash": "DNb8YOyYU04O+6YpfqWTNxHwaBvoi4H4K5WsKnlRF1A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "dN3zWsa5TvCRw5+4903wRWGoboIoWSwqbjO+1CLUwso="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "demos/adfree.md",
+      "output": {
+        ".html": {
+          "relative_path": "demos/adfree.html",
+          "hash": "dxgm5J3IBpum8M5dGuXomLF5Iqgcx1qhTImIntkBAjI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "demos/paywall.md",
+      "output": {
+        ".html": {
+          "relative_path": "demos/paywall.html",
+          "hash": "80nBsbE/Y/M4nZi1I2mKpoyhSBrmeEWFJ6MCOV3D9f4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "demos/poc.md",
+      "output": {
+        ".html": {
+          "relative_path": "demos/poc.html",
+          "hash": "LsswPweZ0tXLLNh9RMxxHyn0TsJcAzhGXbbhb7p+E24="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "demos/shop.md",
+      "output": {
+        ".html": {
+          "relative_path": "demos/shop.html",
+          "hash": "h4k80roKCLn8dOlIC39Yyzhrdxa8oRbPbP+2SIqIWXI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "demos/tickets.md",
+      "output": {
+        ".html": {
+          "relative_path": "demos/tickets.html",
+          "hash": "oFkoejAq7os9vphGL1tgKXQKymi6/NkVLYF6M+8tJZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "demos/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "demos/toc.html",
+          "hash": "RbNgT5qKuwzHW8uCajyzQ2ZgE6XN1PGj1YUxCwE4w4E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting-started.html",
+          "hash": "0OgF+Laay2uwwnQPO/M8QJoDw23uH1tCQF+68GUwLlQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addpackage.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addpackage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/buildplatform.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/buildplatform.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/lockconfig.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/lockconfig.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/lockconfigs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/lockconfigs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/paywall.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/paywall.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/samples.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/samples.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/webgltemplate.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/webgltemplate.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "pQSE5xu0UzAe7pMehV450UkH3cbb0BYw/wgh4GFT1aU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleManual.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleManual.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleScriptingApi.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleScriptingApi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "rWluQk9KHKc0TY9SPfFgTXbS4G9AfAhtNRNSKDU9+OI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/custom.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/custom.html",
+          "hash": "z/wYeCzX1RYBKffPL/4uGNsOLZyxvV2Wt/6UTrjD/FQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/paywall.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/paywall.html",
+          "hash": "+MhpoDyg63XFznud98EfbYpzF9BG+4RV7GMhL34E5xw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "tutorials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/toc.html",
+          "hash": "ScnKsVXQBvaIXeQXrGkfx/xIBNQ/ktV8e8EqZTsdKIw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 9,
+          "skipped_file_count": 9
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 15,
+          "skipped_file_count": 15
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Started | Unlock Protocol for Unity </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Started | Unlock Protocol for Unity ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="install">Install</h2>
+<ol>
+<li>In Unity, open the Package Manager by opening <code>Window/Package Manager</code></li>
+<li>Then click on the + button on the upper-left-hand corner of the Package Manager, select &quot;Add package from git URL...&quot; on the context menu, then paste the following: <code>https://github.com/thehen/unlock-unity-package.git?path=/Unlock%20Unity%20Package</code></li>
+</ol>
+<p><img src="images/addpackage.png" alt="addpackage"></p>
+<ol>
+<li>Now setup Unlock Protocol by selecting <code>Unlock Protocol/Setup Unlock Protocol</code>.</li>
+</ol>
+<p><img src="images/setup.png" alt="setup"></p>
+<ol>
+<li>Set your build platform by opening <code>File/Build Settings</code> and under Platform, selecting <strong>WebGL</strong>.</li>
+</ol>
+<p><img src="images/buildplatform.png" alt="webgltemplate"></p>
+<ol>
+<li>Finally, open up <code>Edit/Project Settings/Player</code> and under the <code>Resolution and Presentation</code> dropdown, select the <code>Unlock-paywall</code> WebGL Template.</li>
+</ol>
+<p><img src="images/webgltemplate.png" alt="webgltemplate"></p>
+<!--
+## Import the Examples
+
+1. In Unity, open the Package Manager by opening `Window/Package Manager`
+1. Ensure you're viewing `Packages: In Project` and select `Unlock Protocol`
+2. Under the Samples dropdown, press import next to the sample you want to include in the project.
+
+![samples](images/samples.png)
+-->
+<h2 id="adding-the-paywall-to-a-new-scene">Adding the Paywall to a new Scene</h2>
+<p>1.) Create a new Unity scene and open it up.</p>
+<p>2.) Create a Lock config file by selecting <code>Assets/Create/Unlock/Lock Config</code></p>
+<p>3.) Select the Lock config file and fill in the lock details as follows.</p>
+<p>Name: <code>Unity Plugin Demo</code></p>
+<p>Network: <code>5</code></p>
+<p>Address <code>0x2816d7651231ae260a7f39fdefbf0d64a8f5fbdb</code></p>
+<p><img src="images/lockconfig.png" alt="lockconfig"></p>
+<p>4.) Create a Paywall config file by selecting <code>Assets/Create/Unlock/Paywall Config</code>.</p>
+<p>5.) Select the Paywall config file and add your Lock config file to the Lock Configs:</p>
+<p><img src="images/lockconfigs.png" alt="lockconfigs"></p>
+<p>6.) Add a <em>UI Canvas</em> and a <em>Button</em> by selecting <code>GameObject/UI/Legacy/Button</code>.</p>
+<p>7.) We now need to create the Unlock Paywall Manager. Create a new GameObject by selecting <code>GameObject/Create Empty</code> and add an <code>UnlockPaywall</code> component to it and set the parameters to match the following:</p>
+<p><img src="images/paywall.png" alt="paywall"></p>
+<p>8.) Select the button you added before, and set the OnClick event to the following:</p>
+<p><img src="https://user-images.githubusercontent.com/1434865/141600053-b08ec0a5-44d2-4fce-bd1b-c3ae395c1ecf.png" alt="btnclick"></p>
+<p>9.) Select <code>File/Build Settings</code>, ensure your build target is WebGL, and press <code>Build and Run</code> to test the scene.</p>
+<p>You should be presented with an empty scene and a button. Upon pressing the button, the payment flow will begin. After succesful payment, the button should then disappear.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Unlock Protocol for Unity
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

@@ -74,3 +74,4 @@ VSCode/*
 */obj/*
 Documentation~/api/*
 Documentation~/manual/changelog.*
+node_modules

@@ -1,8 +1,0 @@
-* [Unity Manual](UnityManual)
-     * [Manual Versions](UnityManual#table-of-content)
-     * [Switching between Unity versions](SwitchingDocumentationVersions)
-     * [OfflineDocumentation](OfflineDocumentation)
-     * [Whats New 5.6](WhatsNew56)
-     * [Leave Feedback](LeaveFeedback)
-* [Installing Unity](InstallingUnity)
-     * [Deploying Unity Offline](DeployingUnityOffline)

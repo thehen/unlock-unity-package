@@ -12,7 +12,7 @@
   <p>Add paid memberships and content access to your Unity WebGL projects.</p>
 </div>
 
-https://user-images.githubusercontent.com/1434865/204395783-4e7cc425-8f3d-48de-9b21-202a78a78cf5.mp4
+https://user-images.githubusercontent.com/1434865/204395956-353ac868-8328-4519-ae85-d77513277aa1.mp4
 
 ## Overview
 

@@ -54,7 +54,7 @@ namespace HenryHoffman.UnlockProtocol
             /// The address which will receive UDT tokens (if the transaction is applicable)
             /// </summary>
             [JsonProperty]
-            private string referrer = "0xde22de740609532fc0f48287b7f258776be814fd";
+            private string referrer = "0xde22DE740609532FC0F48287b7F258776bE814FD";
             public string Referrer { get { return referrer; } set { referrer = value; } }
         }
 

@@ -58,7 +58,7 @@ namespace HenryHoffman.UnlockProtocol.Paywall
             /// <summary>
             /// Network chain ID. See <a href="https://docs.unlock-protocol.com/core-protocol/unlock/networks/">here</a> for an updated list of networks that Unlock Protocol supports.
             /// </summary>
-            public int network;
+            public int network = 5;
 
             /// <summary>
             /// The address which will receive UDT tokens (if the transaction is applicable)

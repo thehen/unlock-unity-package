@@ -31,4 +31,4 @@ Easily add payments and NFTs to your Unity WebGL project - no coding  necessary.
 You can easily create and manage locks through the Unlock Dashboard. For more information, refer to the [official Unlock Protocol documentation](https://docs.unlock-protocol.com/).
 
 ## Getting Started
-Please visit the [package documentation](https://thehen.github.io/unlock-unity-demos/) to learn how to get started using this package.
+Please visit the [package documentation](https://thehen.github.io/unlock-unity-package/) to learn how to get started using this package.

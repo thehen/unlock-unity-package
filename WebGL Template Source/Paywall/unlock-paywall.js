@@ -1,6 +1,8 @@
 import loadjs from '@beyondspace/loadjs'
 
-window.ethereum.autoRefreshOnNetworkChange = false
+if (typeof window.ethereum !== 'undefined') {
+  window.ethereum.autoRefreshOnNetworkChange = false
+}
 
 export async function initializePaywall (paywallConfig) {
   window.unlockProtocolConfig = JSON.parse(paywallConfig)

@@ -18,8 +18,11 @@ namespace HenryHoffman.UnlockProtocol.Custom
 
             LockConfig lockConfig = (LockConfig)target;
 
-            lockConfig.@lock.Address = lockConfig.@lock.Address.ToLower();
-            lockConfig.@lock.Referrer = lockConfig.@lock.Referrer.ToLower();
+            if (lockConfig != null && lockConfig.@lock != null)
+            {
+                lockConfig.@lock.Address = lockConfig.@lock.Address.ToLower();
+                lockConfig.@lock.Referrer = lockConfig.@lock.Referrer.ToLower();
+            }
         }
     }
 }

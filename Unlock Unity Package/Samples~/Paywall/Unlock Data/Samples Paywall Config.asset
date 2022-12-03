@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8b3b35ea3324eb3ad9570bcfb66d0f, type: 3}
+  m_Name: Samples Paywall Config
+  m_EditorClassIdentifier: 
+  config:
+    lockConfigs:
+    - {fileID: 11400000, guid: c525518a2acdb47f5894307dd3d05573, type: 2}
+    checkoutUrlBase: https://paywall.unlock-protocol.com/static/unlock.latest.min.js
+    icon: 
+    callToAction:
+      default: 
+      expired: 
+      metadata: 
+    metadataInputs: []
+    persistentCheckout: 0
+    useDelegatedProvider: 0
+    network: 5
+    referrer: 0xde22DE740609532FC0F48287b7F258776bE814FD
+    messageToSign: 
+    pessimistic: 0

@@ -14,6 +14,11 @@ namespace HenryHoffman.UnlockProtocol.Custom
     {
         public override void OnInspectorGUI()
         {
+            if (!PlayerSettings.WebGL.template.Contains("Unlock-custom"))
+            {
+                EditorGUILayout.HelpBox("Incorrect WebGL Template selected. Go to 'Project Settings > Player Resolution and Presentation' and select Unlock-custom.", MessageType.Warning);
+            }
+
             DrawDefaultInspector();
 
             UnlockCustom custom = (UnlockCustom)target;

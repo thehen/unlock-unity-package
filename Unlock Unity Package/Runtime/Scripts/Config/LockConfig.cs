@@ -14,7 +14,7 @@ namespace HenryHoffman.UnlockProtocol
         /// <summary>
         /// The lock object
         /// </summary>
-        public Lock @lock;
+        public Lock @lock = new Lock();
 
         /// <summary>
         /// The lock configuration. This is where local locks are configured for retrieving later in the application cycle.
@@ -28,7 +28,7 @@ namespace HenryHoffman.UnlockProtocol
             [SerializeField]
             [Tooltip("Name of the lock")]
             [JsonProperty]
-            private string name;
+            private string name = "";
             public string Name { get { return name; } set { name = value; } }
 
             /// <summary>
@@ -37,7 +37,7 @@ namespace HenryHoffman.UnlockProtocol
             [SerializeField]
             [Tooltip("Network chain ID")]
             [JsonProperty]
-            private int network;
+            private int network = 5;
             public int Network { get { return network; } set { network = value; } }
 
             /// <summary>
@@ -46,7 +46,7 @@ namespace HenryHoffman.UnlockProtocol
             [SerializeField]
             [JsonIgnore]
             [Tooltip("Unique lock address")]
-            private string address;
+            private string address = "";
 
             public string Address { get { return address; } set { address = value; }  }
 

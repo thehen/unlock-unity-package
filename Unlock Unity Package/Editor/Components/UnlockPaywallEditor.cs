@@ -14,6 +14,11 @@ namespace HenryHoffman.UnlockProtocol.Paywall
     {
         public override void OnInspectorGUI()
         {
+            if (!PlayerSettings.WebGL.template.Contains("Unlock-paywall"))
+            {
+                EditorGUILayout.HelpBox("Incorrect WebGL Template selected. Go to 'Project Settings > Player Resolution and Presentation' and select Unlock-paywall.", MessageType.Warning);
+            }
+
             DrawDefaultInspector();
 
             UnlockPaywall paywall = (UnlockPaywall)target;

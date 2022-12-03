@@ -292,7 +292,7 @@
       "output": {
         ".html": {
           "relative_path": "getting-started.html",
-          "hash": "0OgF+Laay2uwwnQPO/M8QJoDw23uH1tCQF+68GUwLlQ="
+          "hash": "r/rpA99q6nwb5YplmxQ+tgxCxAwfQ1SDfA6DLFwMmXU="
         }
       },
       "is_incremental": false,
@@ -493,7 +493,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 9,
-          "skipped_file_count": 9
+          "skipped_file_count": 8
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,

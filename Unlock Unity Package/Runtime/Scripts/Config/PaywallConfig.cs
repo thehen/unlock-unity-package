@@ -11,7 +11,7 @@ namespace HenryHoffman.UnlockProtocol.Paywall
     [CreateAssetMenu(fileName = "Paywall Config", menuName = "Unlock/Paywall Config", order = 1)]
     public class PaywallConfig : ScriptableObject
     {
-        public Config config;
+        public Config config = new Config();
 
         /// <summary>
         /// The paywall configuration class. This is where paywalls used in the application are defined.
@@ -23,7 +23,7 @@ namespace HenryHoffman.UnlockProtocol.Paywall
             /// Array of <c>LockConfig</c> objects. This is so your paywall can support multiple locks if needed.
             /// </summary>
             [JsonIgnore]
-            public LockConfig[] lockConfigs;
+            public LockConfig[] lockConfigs = new LockConfig[] { };
 
             /// <summary>
             /// The base url used for the paywall checkout. This is useful if a beta release has a different base url.
@@ -33,17 +33,17 @@ namespace HenryHoffman.UnlockProtocol.Paywall
             /// <summary>
             /// The icon displayed in the checkout modal.
             /// </summary>
-            public string icon;
+            public string icon = "";
 
             /// <summary>
             /// The <c>CallToAction</c> object which defines call to action parameters.
             /// </summary>
-            public CallToAction callToAction;
+            public CallToAction callToAction = new CallToAction();
 
             /// <summary>
             /// TODO
             /// </summary>
-            public string[] metadataInputs;
+            public string[] metadataInputs = new string[] { };
 
             /// <summary>
             /// true if the modal cannot be closed, defaults to false when embedded.

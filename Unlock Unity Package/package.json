@@ -1,7 +1,7 @@
 {
     "name": "com.henryhoffman.unlockprotocol",
     "displayName": "Unlock Protocol",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "unity": "2020.2",
     "unityRelease": "0f1",
     "description": "The Unlock Protocol package provides an integration for using the Unlock Protocol Paywall or Unlock-js with Unity.",

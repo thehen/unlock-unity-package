@@ -1,6 +1,6 @@
 {
   "name": "unlock-unity",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "An Unlock Protocol integration for Unity Game Engine.",
   "main": "index.js",
   "scripts": {

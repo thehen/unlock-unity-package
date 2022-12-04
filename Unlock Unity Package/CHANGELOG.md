@@ -1,6 +1,7 @@
-## [2.0.1] 
+## [2.1.0] 
 - Minor bug fixes
 - Added warning messaging for unpopulated fields
+- Added samples
 
 ## [2.0.0] 
 
